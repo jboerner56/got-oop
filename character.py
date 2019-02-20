@@ -12,7 +12,11 @@ class Character():
         self.avatar = new_avatar
         self.inventory = []
     
-    def greet(self, someone):
+    # someone=None is a default arguement
+    # none is equivalent to 'null' in other languages
+    def greet(self, someone=None):
         # if ( ) are used then it needs to have a , after. otherwise it will not run. no () = no ,
-
-        return "Hello, %s, I am %s. I will destroy you." % (someone.name, self.name,)
+        if someone:
+            return "Hello, %s, I am %s. I will destroy you." % (someone.name, self.name,)
+        else:
+            return "Hello, I am %s. I will destroy you" % (self.name)

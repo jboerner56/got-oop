@@ -16,3 +16,6 @@ print(len(arya.inventory))
 # arya should have a 'greet' method
 # when i call with arya.greet(jon) it should return "hello, jon snow, i am arya stark, i will destroy you."
 print(arya.greet(jon))
+# arya should have a 'greet' method
+# when i call with arya.greet() it should return "hello, i am arya stark. i will destroy you"
+print(arya.greet())
