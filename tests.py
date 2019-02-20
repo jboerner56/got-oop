@@ -1,5 +1,6 @@
 # not real tests
 from character import Character
+from character import Hero
 # characters can be instantiated with name and avatar
 arya = Character("Arya Stark", "arya.png")
 jon = Character("Jon Snow", "jon.pgn")
@@ -19,3 +20,6 @@ print(arya.greet(jon))
 # arya should have a 'greet' method
 # when i call with arya.greet() it should return "hello, i am arya stark. i will destroy you"
 print(arya.greet())
+
+# should be able to create a hero instance.
+bronn = Hero("Bronn of the Blckwater", "bron.pgn")
