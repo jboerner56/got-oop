@@ -1,6 +1,7 @@
 # not real tests
 from character import Character
 from character import Hero
+from character import Monster
 # characters can be instantiated with name and avatar
 arya = Character("Arya Stark", "arya.png")
 jon = Character("Jon Snow", "jon.pgn")
@@ -22,4 +23,12 @@ print(arya.greet(jon))
 print(arya.greet())
 
 # should be able to create a hero instance.
-bronn = Hero("Bronn of the Blckwater", "bron.pgn")
+bronn = Hero("Bronn of the Blackwater", "bron.pgn")
+
+# hero should be able to greet character.
+print(bronn.greet(arya))
+print(jon.greet(bronn))
+# creates monster instance
+Dragon = Monster("Scary Dragon", "dragon.img")
+print(Dragon.greet(bronn))
+print(Dragon.greet(jon))

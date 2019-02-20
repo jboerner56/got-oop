@@ -31,3 +31,9 @@ class Character():
 # Charater is the superclass of Hero
 class Hero(Character):
     pass
+
+# creates monster class
+class Monster(Character):
+    def greet(self, someone=None):
+        if someone:
+            return "Hello, %s I am %s. You may want to run away" % (someone.name, self.name,)    
