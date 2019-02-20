@@ -12,6 +12,7 @@ class Character():
         self.avatar = new_avatar
         self.inventory = []
     
-    def greet(self):
+    def greet(self, someone):
         # if ( ) are used then it needs to have a , after. otherwise it will not run. no () = no ,
-        return "Hello I am %s. I will destroy you." % (self.name,)
+
+        return "Hello, %s, I am %s. I will destroy you." % (someone.name, self.name,)
